@@ -1,0 +1,4 @@
+Farmer musi przeprawiæ przez rzekê swój dobytek sk³adaj¹cy siê z kozy, wilka, i sa³aty.
+W ³ódce oprócz farmera mo¿e znajdowaæ siê jeden przedmiot.
+Gdy wilk zostanie sam z koz¹ na brzegu, zje j¹ i podobnie, gdy koza zostanie sama z sa³at¹.
+https://www.youtube.com/watch?v=EG2LuimKCOo
