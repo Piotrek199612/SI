@@ -1,5 +1,5 @@
 (define (problem p1)
-	(:domain world-of-blocks)
+	(:domain Farmer)
 	(:objects koza wilk salata)
 	(:init
 		(onleft koza)
