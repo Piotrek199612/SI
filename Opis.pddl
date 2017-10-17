@@ -1,5 +1,5 @@
 (define
-	(domain world-of-blocks)
+	(domain Farmer)
 	(:requirements :adl)
 	(:predicates
 		(onleft ?x)
