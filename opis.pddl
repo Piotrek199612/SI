@@ -1,28 +1,27 @@
 (define
-	(domain world-of-blocks)
+	(domain hanoi)
 	(:requirements :adl)
 	(:predicates
-		(smaller ?x ?y)
-		(on ?x ?y)
+		(on-top ?x ?y)
 		(clear ?x)
+		(smaller ?x ?y)
 	)
-	
-	(:action pickup
+	(:action przesun-na-pusty
 		:parameters (?x ?y ?z)
 		:precondition
 		(and
-			(clear ?x)
 			(clear ?y)
-			(on ?x ?z)
-			(not(clear ?z))
+			(clear ?z)
+			(not (clear ?x))
+			(smaller ?z ?y)
+			(on-top ?z ?x)
 		)
 		:effect
 		(and
-			(clear ?z)
-			(on ?x ?y)
-			(not(on ?x ?z))
+		(not (on-top ?z ?x))
+			(on-top ?z ?y)
 			(not(clear ?y))
+			(clear ?x)
 		)
 	)
-		
 )
