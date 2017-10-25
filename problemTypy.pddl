@@ -1,0 +1,37 @@
+(define (problem p1)
+	(:domain hanoiroot)
+	(:objects k1 - krazek k2 - krazek k3 - krazek k4 - krazek k5 - krazek x - palik y - palik z - palik)
+	(:init
+		(na_paliku x k1)
+		(na_paliku x k2)
+		(na_paliku x k3)
+		(na_paliku x k4)
+		(na_paliku x k5)
+						
+		(na_krazku k2 k1)		
+		(na_krazku k3 k2)
+		(na_krazku k4 k3)
+		(na_krazku k5 k4)
+
+		(smaller k4 k5) ; co mniejsze od czego
+		(smaller k3 k5)
+		(smaller k2 k5)
+		(smaller k1 k5)
+		(smaller k3 k4)
+		(smaller k2 k4)
+		(smaller k1 k4)
+		(smaller k2 k3)
+		(smaller k1 k3)
+		(smaller k1 k2)
+		(smaller k1 k2)
+	)
+	(:goal
+		(and
+		(na_paliku z k1)
+		(na_krazku k5 k4)
+		(na_krazku k4 k3)
+		(na_krazku k3 k2)
+		(na_krazku k2 k1)
+		)
+	)
+)
